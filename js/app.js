@@ -15,11 +15,21 @@ alert(arrayNumeriRandom);
 //Allo scadere dell'alert creare un timer di 30 secondi
 //1. Creare delle variabili del contatore e del timer
 let counter = 30;
-let time = 3000;
+let time = 1000;
 //2. Creare con setInterval un timer di 30 secondi
-let clock = setInterval(onInterval, time)
+let clock = setInterval(onInterval, time);
 
 //Allo scadere del timer creare un prompt dove l'utente dovrà scrivere i 5 numeri che ha letto nell'alert
+const arrayNumeriUtente = [];
+
+const numeroUtente1 = prompt('Inserisci il primo numero che ricordi.');
+const numeroUtente2 = prompt('Inserisci il secondo numero che ricordi.');
+const numeroUtente3 = prompt('Inserisci il terzo numero che ricordi.');
+const numeroUtente4 = prompt('Inserisci il quarto numero che ricordi.');
+const numeroUtente5 = prompt('Inserisci il quinto numero che ricordi.');
+
+arrayNumeriUtente.push(numeroUtente1, numeroUtente2, numeroUtente3, numeroUtente4, numeroUtente5);
+console.log(arrayNumeriUtente);
 
 //Individuare quanti numeri sono stati indovinati e quanti no
 
