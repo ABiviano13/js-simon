@@ -32,7 +32,16 @@ arrayNumeriUtente.push(numeroUtente1, numeroUtente2, numeroUtente3, numeroUtente
 console.log(arrayNumeriUtente);
 
 //Individuare quanti numeri sono stati indovinati e quanti no
+for(let i = 0; i < 5; i++){
+    let confrontoIndiceArray = arrayNumeriRandom[i] == arrayNumeriUtente[i];
+    // console.log(confrontoIndiceArray);
 
+    if(confrontoIndiceArray === false){
+        console.log(confrontoIndiceArray, 'Non hai indovinato!!');
+    }else{
+        console.log(confrontoIndiceArray, 'Hai indovinato!!');
+    }
+}
 
 //FUNZIONI//
 function onInterval() {
