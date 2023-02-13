@@ -13,7 +13,28 @@ for(let i = 0; i < 5; i++){
 alert(arrayNumeriRandom);
 
 //Allo scadere dell'alert creare un timer di 30 secondi
+//1. Creare delle variabili del contatore e del timer
+let counter = 30;
+let time = 3000;
+//2. Creare con setInterval un timer di 30 secondi
+let clock = setInterval(onInterval, time)
 
 //Allo scadere del timer creare un prompt dove l'utente dovrà scrivere i 5 numeri che ha letto nell'alert
 
 //Individuare quanti numeri sono stati indovinati e quanti no
+
+
+//FUNZIONI//
+function onInterval() {
+    //1. Decrementare il counter
+	counter--;
+	// console.log(counter);
+
+    //2. Creare un if-else per visualizzare quando il tempo è a 0 la fine del tempo e il blocco di esso
+	if (counter === 0) {
+		clearInterval(clock);
+		console.log('Finito il tempo!!!');
+	} else {
+		console.log(counter);
+	};
+};
